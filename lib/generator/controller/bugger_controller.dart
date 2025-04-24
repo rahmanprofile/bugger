@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:flutter/cupertino.dart';
+
 import '../model/bugger_model.dart';
 import '../provider/provider.dart';
 
@@ -16,7 +18,9 @@ class Bugger {
   /// Call this in your `main()` before using Bugger.
   String initialized() {
     _isInitialized = true;
-    return "✅ Bugger is initialized and ready to report bugs.";
+    var init = "✅ Bugger is initialized and ready to report bugs.";
+    debugPrint(init);
+    return init;
   }
 
   /// Save records only if initialized, else show warning
