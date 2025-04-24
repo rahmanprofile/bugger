@@ -3,13 +3,14 @@ import '../model/bugger_model.dart';
 import '../provider/provider.dart';
 
 class Bugger {
-  static final Bugger _instance = Bugger._internal();
+
+  static final Bugger instance = Bugger._internal();
   bool _isInitialized = false;
 
   Bugger._internal();
 
   factory Bugger() {
-    return _instance;
+    return instance;
   }
 
   /// Call this in your `main()` before using Bugger.
