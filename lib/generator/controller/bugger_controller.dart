@@ -1,6 +1,6 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'package:flutter/cupertino.dart';
-
 import '../model/bugger_model.dart';
 import '../provider/provider.dart';
 
@@ -37,6 +37,7 @@ class Bugger {
       final catcher = jsonDecode(response.body)['message'];
       return catcher.toString();
     } catch (e, trace) {
+      log('trace: $e, $trace');
       throw ('🔥Bugger $e \n$trace');
     }
   }
