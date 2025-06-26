@@ -31,7 +31,7 @@ class BuggerDemo extends StatefulWidget {
 
 class _BuggerDemoState extends State<BuggerDemo> {
   void triggerBuggerLog() {
-    Bugger.log("API Response Error");
+    Bugger.log("🚨 Trigger a debug log using Bugger");
   }
 
   @override
