@@ -23,6 +23,4 @@
 
 ```yaml
 dependencies:
-  bugger:
-    git:
-      url: https://github.com/rahmanprofile/bugger.git
+  bugger: ^0.0.1
