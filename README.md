@@ -10,6 +10,20 @@ Elegant, colorful, and ideal for debugging with file, method, and line-level pre
 
 ---
 
+### 🧪 Sample Bugger Output
+
+```console
+╔════════════╦════════════════════════════════════════════════════════════════════╗
+║ Field      ║ Value - [Bugger Detection]                                         ║
+╠════════════╬════════════════════════════════════════════════════════════════════╣
+║ 📍 Issue   ║ ☢️ This is a debug log using Bugger!                               ║
+║ 📄 File    ║ main.dart                                                          ║
+║ 📌 Line    ║ 32                                                                 ║
+║ 🔧 Method  ║ [_triggerBuggerLog]                                                ║
+║ 🔗 Location║ package:example/main.dart : At line - 32                           ║
+║ 🌐 GitHub  ║ https://github.com/rahmanprofile/bugger.git                        ║
+╚════════════╩════════════════════════════════════════════════════════════════════╝
+
 ## ✨ Features
 
 - 🧾 Clean console output with **table formatting**
