@@ -1,25 +1,30 @@
 # 🐞 Bugger
 
-**Bugger** is a beautiful and developer-friendly logging utility for Flutter that formats logs in a clean, table-style view in the console. It helps identify exactly where the error occurred — file name, method, line number — with colors and optional body content.
+The best Flutter package for logging in a developer-friendly, table-style console layout.  
+Elegant, colorful, and ideal for debugging with file, method, and line-level precision.
 
-> 🧪 Bugger logs only appear in `kDebugMode`. Silent in production (release) builds.
+| Pub Version | Pub Points | Likes | GitHub Repo |
+|-------------|------------|-------|-------------|
+| [![pub version](https://img.shields.io/pub/v/bugger.svg)](https://pub.dev/packages/bugger) | ![Pub Points](https://img.shields.io/pub/points/bugger) | ![likes](https://img.shields.io/pub/likes/bugger) | [View Repo](https://github.com/your_username/bugger) |
 
 ---
 
 ## ✨ Features
 
-- ✅ Clean console output with table formatting
-- 📍 Auto-detects file name, method name, line number, and source location
-- 🌈 Colored output (green, yellow, red for info/warning/error)
-- 📦 Silent in production (`kReleaseMode`)
-- 🌐 GitHub link support (for contributing/open-source context)
-- 🔄 Long lines auto-wrap for readability
+- 🧾 Clean console output with **table formatting**
+- 🧠 Auto-detects file name, method name, line and column number
+- 🌈 Color-coded messages (`Info`, `Warning`, `Error`)
+- 🚫 Logs only in `kDebugMode` — silent in release builds
+- 🔗 GitHub source linking (optional)
+- 📊 GitHub user score support (Repos, Followers, Contributions)
+- 🔄 Long lines **auto-wrap** for better console readability
+- 💡 Easy to use with optional tags, stack traces, and callbacks
 
 ---
 
-## 🚀 Getting Started
+## 📦 Installation
 
-### Add to your `pubspec.yaml`:
+Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
