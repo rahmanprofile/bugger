@@ -5,6 +5,7 @@ void main() {
   runApp(const MyApp());
 }
 
+/// Root widget for the app
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -22,32 +23,22 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class BuggerDemo extends StatefulWidget {
+/// Demo page that triggers Bugger logging
+class BuggerDemo extends StatelessWidget {
   const BuggerDemo({super.key});
 
-  @override
-  State<BuggerDemo> createState() => _BuggerDemoState();
-}
-
-class _BuggerDemoState extends State<BuggerDemo> {
-
-  // Function that trigger bugger log to get output where is what is?
-  void triggerBuggerLog() {
-    // TODO: You have call them, in execution time where u want to check them.. line or function issue
-    Bugger.log("🚨 Trigger a debug log using Bugger");
+  /// Call this to log styled debug output using Bugger
+  void _triggerBuggerLog() {
+    Bugger.log("🐞 This is a debug log using Bugger!");
   }
-
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('🐞 Bugger Log Demo'),
-      ),
+      appBar: AppBar(title: const Text('🐞 Bugger Log Demo')),
       body: Center(
         child: ElevatedButton.icon(
-          onPressed: triggerBuggerLog, /// Here called
+          onPressed: _triggerBuggerLog, // 👈 Trigger log when pressed
           icon: const Icon(Icons.bug_report_outlined),
           label: const Text('Trigger Bugger Log'),
         ),

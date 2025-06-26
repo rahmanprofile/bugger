@@ -29,4 +29,4 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  bugger: ^0.0.1
+  bugger: ^0.0.3
