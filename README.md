@@ -24,6 +24,7 @@ Elegant, colorful, and ideal for debugging with file, method, and line-level pre
 ║ 🌐 GitHub  ║ https://github.com/rahmanprofile/bugger.git                        ║
 ╚════════════╩════════════════════════════════════════════════════════════════════╝
 
+```
 ## ✨ Features
 
 - 🧾 Clean console output with **table formatting**
