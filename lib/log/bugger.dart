@@ -5,7 +5,10 @@ import 'package:stack_trace/stack_trace.dart';
 /// rich console output in table format for better debugging.
 class Bugger {
   /// ANSI escape code for red bold text (used for warnings/errors)
-  static const String warningColor = '\x1B[31;1m';
+  static const String warningColor = '\x1B[31;1m';     // 🔴 Red Bold
+  static const String successColor = '\x1B[32;1m';     // 🟢 Green Bold
+  static const String infoColor    = '\x1B[36;1m';     // 🔵 Cyan Bold
+  static const String borderColor  = '\x1B[35;1m';     // 🟣 Magenta Bold
 
   /// ANSI reset code to restore default text color
   static const String reset = '\x1B[0m';
@@ -108,11 +111,11 @@ class Bugger {
 
     /// Combine everything with colors and print to debug console
     final table = '''
-$warningColor$top
-$header
-$divider
-$data
-$bottom$reset
+$borderColor$top
+$borderColor$header
+$borderColor$divider
+$infoColor$data
+$borderColor$bottom$reset
 ''';
 
     /// Print to debug console only (debugPrint avoids overflow)
