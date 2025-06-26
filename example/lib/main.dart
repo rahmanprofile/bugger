@@ -11,15 +11,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bugger',
+      title: 'Bugger Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
       ),
       home: const BuggerDemo(),
     );
   }
 }
-
 
 class BuggerDemo extends StatefulWidget {
   const BuggerDemo({super.key});
@@ -30,14 +31,14 @@ class BuggerDemo extends StatefulWidget {
 
 class _BuggerDemoState extends State<BuggerDemo> {
   void triggerBuggerLog() {
-    Bugger.log("If you're asking to add a can do it depending on context:");
+    Bugger.log("API Response Error");
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bugger Demo'),
+        title: const Text('🐞 Bugger Log Demo'),
       ),
       body: Center(
         child: ElevatedButton.icon(

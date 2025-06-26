@@ -1,8 +1,9 @@
 name: bugger
-description: "Bugger — A beautiful debug logger for Flutter."
+description: "A beautiful and developer-friendly console logger for Flutter apps. Bugger shows logs in table format with colors and detailed location metadata."
 version: 0.0.1
-homepage:
-
+homepage: https://github.com/rahmanprofile/bugger
+repository: https://github.com/rahmanprofile/bugger
+issue_tracker: https://github.com/rahmanprofile/bugger/issues
 environment:
   sdk: ^3.7.2
   flutter: ">=1.17.0"
