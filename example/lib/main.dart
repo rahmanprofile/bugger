@@ -30,9 +30,14 @@ class BuggerDemo extends StatefulWidget {
 }
 
 class _BuggerDemoState extends State<BuggerDemo> {
+
+  // Function that trigger bugger log to get output where is what is?
   void triggerBuggerLog() {
+    // TODO: You have call them, in execution time where u want to check them.. line or function issue
     Bugger.log("🚨 Trigger a debug log using Bugger");
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +47,7 @@ class _BuggerDemoState extends State<BuggerDemo> {
       ),
       body: Center(
         child: ElevatedButton.icon(
-          onPressed: triggerBuggerLog,
+          onPressed: triggerBuggerLog, /// Here called
           icon: const Icon(Icons.bug_report_outlined),
           label: const Text('Trigger Bugger Log'),
         ),
