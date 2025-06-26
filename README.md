@@ -3,9 +3,10 @@
 The best Flutter package for logging in a developer-friendly, table-style console layout.  
 Elegant, colorful, and ideal for debugging with file, method, and line-level precision.
 
-| Pub Version | Pub Points | Likes | GitHub Repo |
-|-------------|------------|-------|-------------|
-| [![pub version](https://img.shields.io/pub/v/bugger.svg)](https://pub.dev/packages/bugger) | ![Pub Points](https://img.shields.io/pub/points/bugger) | ![likes](https://img.shields.io/pub/likes/bugger) | [View Repo](https://github.com/your_username/bugger) |
+[![pub package](https://img.shields.io/pub/v/bugger.svg)](https://pub.dev/packages/bugger)
+![Pub Points](https://img.shields.io/pub/points/bugger)
+![Likes](https://img.shields.io/pub/likes/bugger)
+[![GitHub Repo](https://img.shields.io/badge/github-rahmanprofile%2Fbugger-blue?logo=github)](https://github.com/rahmanprofile/bugger)
 
 ---
 
